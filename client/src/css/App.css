@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.home {
+  height: 95vh;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.tops {
+  height: 95vh;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.pants {
+  height: 95vh;
+  width: 100%;
+  background-color: rgb(182, 103, 0);
+}
+
+.accessories {
+  height: 95vh;
+  width: 100%;
+  background-color: rgb(26, 36, 133);
+}
+
+.nav {
+  width: 95%;
+  margin: 0 auto;
+  max-height: 1.5%;
+  padding-top: 1.5%;
+  max-width: 1300px;
+  /* background-color: rgb(202, 179, 143); */
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: solid 1px #232323;
+}
+
+.nav__ul {
+  display: flex;
+  gap: 20%;
+}
+.nav__item {
+  list-style-type: none;
+  display: flex;
+}
+.nav__item a {
+  text-decoration: none;
+  color: black;
+}
