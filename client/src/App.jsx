@@ -41,12 +41,14 @@ export default function App() {
           </ul>
         </nav>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/tops" element={<Pants />} />
-          <Route path="/pants" element={<Tops />} />
-          <Route path="/accessories" element={<Accessories />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tops" element={<Tops />} />
+            <Route path="/pants" element={<Pants />} />
+            <Route path="/accessories" element={<Accessories />} />
+          </Routes>
+        </main>
       </Router>
     </>
   );
