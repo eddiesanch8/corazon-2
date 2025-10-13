@@ -7,6 +7,8 @@ export const initProductsTable = () => {
       id INT AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(255) NOT NULL,
       category VARCHAR(50),
+      location VARCHAR(50),
+      details ENUM("Thrifted","Gently Used", "New", "Unknown"),
       price DECIMAL(10,2) NOT NULL,
       image VARCHAR(255),
       description TEXT,
@@ -20,10 +22,12 @@ export const initProductsTable = () => {
 };
 
 export const seedProducts = () => {
-  const dummyProducts = [
+  const seedProducts = [
     [
       "Classic White Tee",
       "Tops",
+      "Charlotte, NC",
+      "Thrifted",
       19.99,
       "/images/white-tee.jpg",
       "Comfortable white tee",
@@ -49,7 +53,7 @@ export const seedProducts = () => {
     if (results[0].count === 0) {
       const insertQuery =
         "INSERT INTO products (name, category, price, image, description) VALUES ?";
-      pool.query(insertQuery, [dummyProducts], (err) => {
+      pool.query(insertQuery, [seedProducts], (err) => {
         if (err) console.error("Error seeding products:", err);
         else console.log("Dummy products inserted");
       });
