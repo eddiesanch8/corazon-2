@@ -1,21 +1,92 @@
-.tops {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.product__title {
+  grid-column: 1/-1;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  margin: 10px;
+  padding: 0.5em;
+  border: 1px solid rgba(188, 191, 191, 0.899);
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(135, 135, 156, 0.5843137255) -7px 6px 8px 2px;
+}
+.product:focus {
+  transform: translateY(-2px);
+  box-shadow: rgba(135, 135, 156, 0.5843137255) -7px 6px 8px 2px;
+}
+
+@media screen and (max-width: 520px) {
+  .product {
+    width: 85%;
+    max-width: auto;
+  }
+}
+@media screen and (max-width: 850px) {
+  .product {
+    width: 85%;
+    max-width: auto;
+  }
+}
+
+.product__img {
+  width: 95%;
+  border-radius: 300px;
+  border: 1px solid rgba(188, 191, 191, 0.899);
+}
+.product__name {
+  color: #011126;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.product__details {
   display: flex;
 }
 
-.product {
-  margin: 1%;
+.product__price {
+  font-weight: 100;
+  align-self: flex-start;
+}
+
+.product__btn {
   display: flex;
-  flex-direction: column;
-  width: 30%;
-  max-width: 450px;
-  border: 2px solid red;
   align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-style: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 90%;
+  background-color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid #121212;
+  color: #171717;
+  font-size: 1rem;
+  font-weight: 600;
 }
-.product__img {
-  width: 50%;
+
+.product__btn:hover {
+  background-color: #ead5f2;
 }
-.product__name {
-  color: rgb(92, 98, 105);
-  font-size: 2rem;
-  padding-top: 10px;
+.filter {
+  grid-column: 1/-1;
+  justify-self: normal;
+  padding-left: 2%;
+  background-color: rgb(244, 245, 246);
 }

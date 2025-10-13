@@ -6,48 +6,51 @@
 .home {
   height: 95vh;
   width: 100%;
-  background-color: antiquewhite;
+  background-color: #f9f7f7;
 }
 
-.tops {
-  height: 95vh;
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.05fr 0.05fr 1fr 1fr;
   width: 100%;
-  background-color: antiquewhite;
-}
-
-.pants {
-  height: 95vh;
-  width: 100%;
-  background-color: rgb(182, 103, 0);
-}
-
-.accessories {
-  height: 95vh;
-  width: 100%;
-  background-color: rgb(26, 36, 133);
-}
-
-.nav {
-  width: 95%;
   margin: 0 auto;
-  max-height: 1.5%;
-  padding-top: 1.5%;
-  max-width: 1300px;
-  /* background-color: rgb(202, 179, 143); */
-  display: flex;
-  justify-content: space-evenly;
-  border-bottom: solid 1px #232323;
+  background-color: #faf8f8;
+
+  max-width: 1250px;
+
+  justify-items: center;
 }
 
-.nav__ul {
-  display: flex;
-  gap: 20%;
+@media screen and (max-width: 520px) {
+  .product-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 0.05fr 0.5fr 0.5fr;
+    row-gap: 8px;
+    margin-bottom: 300px;
+  }
 }
-.nav__item {
+
+@media screen and (min-width: 521px) and (max-width: 850px) {
+  .product-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.05fr 0.05fr 0.5fr 0.5fr;
+    row-gap: 8px;
+    margin-bottom: 300px;
+  }
+}
+
+.web-footer {
+  border: 2px solid rgb(57, 213, 43);
+}
+
+.web__ul {
   list-style-type: none;
+  justify-content: space-around;
   display: flex;
 }
-.nav__item a {
+
+.web__a {
   text-decoration: none;
-  color: black;
+  color: aqua;
 }
