@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 8000;
 
 initProductsTable();
 seedProducts();
+
 // ------------------------- setting up server settings ---------------------------\\
 app.use(express.json());
 app.use(cors());
