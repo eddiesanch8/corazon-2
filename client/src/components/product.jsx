@@ -1,17 +1,25 @@
 import "../css/product.css";
-import shirt from "../assets/images/80s-block.jpg";
+const product = {
+  img: "/cherry-earings.webp",
+  productName: "Cheri Eearings",
+  price: 13.99,
+  location: "Charlotte, NC",
+  category: "Accessories",
+  condition: "Thrifted",
+};
+
 import cart from "../assets/cart-2.svg";
 // fetch in other file loop through the objects, assign them a variable...
 // and then import those values in those objects into the productCard
 export default function ProductCard() {
   return (
     <section className="product">
-      <img className="product__img" src={shirt} alt="stuff" />
-      <h2 className="product__name"> Thrifted Top</h2>
+      <img className="product__img" src={product.img} alt="stuff" />
+      <h2 className="product__name"> {product.productName}</h2>
       <div className="product__details">
-        <p className="product__price">$13.99</p>
-        <p className="product__location">|Charlotte, NC|</p>
-        <p className="product__category">Thrifted Top</p>
+        <p className="product__price">{product.price}</p>
+        <p className="product__location">|{product.location}|</p>
+        <p className="product__category">{product.condition}</p>
       </div>
 
       {/* <p className="product__description">
@@ -21,7 +29,6 @@ export default function ProductCard() {
         hic exercitationem alias culpa consectetur accusamus.
       </p> */}
       <button className="product__btn">
-        {" "}
         <img className="product__cart" src={cart} />
         Add to Cart
       </button>
