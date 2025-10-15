@@ -64,6 +64,10 @@
   align-self: flex-start;
 }
 
+.product__condition {
+  color: #b738da;
+}
+
 .product__btn {
   display: flex;
   align-items: center;

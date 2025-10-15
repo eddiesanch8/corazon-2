@@ -1,13 +1,14 @@
 import "../css/product.css";
 
-export function FilterProduct() {
+export function FilterProduct({ onFilterChange }) {
   return (
     <div className="filter">
-      <label for="products">Filter By</label>
-      <select name="products" id="products">
+      <label htmlFor="products">Filter By</label>
+      <select onChange={(e) => onFilterChange(e.target.value)}>
         <option value="High-Low">Price: Highest To Lowest</option>
         <option value="Low-High">Price: Lowest to Highest</option>
-        <option value="Alpha">A-Z</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
       </select>
     </div>
   );
