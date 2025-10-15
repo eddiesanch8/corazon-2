@@ -1,5 +1,8 @@
 import express from "express";
 import { getProducts } from "../config/sqlUtils.js";
+
+//Problem : given an array of integers, write a function to find the second largest number in the array
+
 const router = express.Router();
 
 router.get("/", async (req, res) => {
