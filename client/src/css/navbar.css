@@ -44,13 +44,9 @@
   display: flex;
 }
 
-.button-link {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  border-radius: 300px;
-  color: black;
-  background-color: rgb(125, 108, 190);
+.button-account {
+  width: 2.2rem;
+  align-self: end;
 }
 .nav-bar__item a {
   text-decoration: none;

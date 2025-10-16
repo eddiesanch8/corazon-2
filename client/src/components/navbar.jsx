@@ -3,6 +3,7 @@ import { useState } from "react";
 import hamburger from "../assets/hamburger-2.svg";
 import closeBtn from "../assets/close-2.svg";
 import cart from "../assets/cart-2.svg";
+import account from "../assets/account.svg";
 import "../css/navbar.css";
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,11 +58,11 @@ export function NavBar() {
 
         <ul className="nav-bar__ul">
           <Link
-            to="/"
-            className="nav-bar__item button-link"
+            to="/profile"
+            className="nav-bar__item "
             onClick={handleLinkClick}
           >
-            Profile
+            <img className="button-account" src={account} />
           </Link>
 
           <li className="nav-bar__item">

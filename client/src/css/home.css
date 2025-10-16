@@ -1,0 +1,29 @@
+.home-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #faf8f8;
+  max-width: 1250px;
+  grid-template-areas:
+    "hero hero hero"
+    "text text text";
+}
+.hero {
+  grid-area: hero;
+  position: relative; /* Parent container needs positioning if children are absolutely positioned */
+}
+.heroimg-2 {
+  width: 100%;
+  height: auto;
+  z-index: 15;
+}
+
+.hero-btn {
+  position: relative;
+  display: flex;
+  left: 45%;
+  top: -45%;
+  padding: 10px;
+}

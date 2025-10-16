@@ -4,8 +4,19 @@ import { FilterProduct } from "./filter";
 import { WebFooter } from "./footer";
 import React, { useState, useEffect } from "react";
 import HandleFilter from "../handlers/handlefilter";
+import HomePage from "./home";
+import ContactPage from "./contact";
+//
+
 export function Home() {
-  return <p>Hello World</p>;
+  return (
+    <>
+      <main className="home-page">
+        <HomePage />
+      </main>
+      <WebFooter />
+    </>
+  );
 }
 
 export function Tops() {
@@ -133,8 +144,8 @@ export function Accessories() {
 export function Profile() {
   return (
     <>
-      <main className="product">
-        <h1>Login/Signup or logout?</h1>
+      <main className="contact">
+        <ContactPage />
       </main>
       <WebFooter />
     </>
