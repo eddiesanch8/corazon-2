@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./css/App.css";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Home, Pants, Tops, Accessories } from "./components/pages";
+import { Home, Pants, Tops, Accessories, Profile } from "./components/pages";
 import { NavBar } from "./components/navbar";
+
 export default function App() {
   const [cartItems, setCartItems] = useState([]);
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tops" element={<Tops />} />
           <Route path="/pants" element={<Pants />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/accessories" element={<Accessories />} />
         </Routes>
       </main>

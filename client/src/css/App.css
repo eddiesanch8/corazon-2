@@ -3,11 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-.home {
-  height: 95vh;
-  width: 100%;
-  background-color: #f9f7f7;
-}
 
 .product-container {
   display: grid;
@@ -16,9 +11,7 @@
   width: 100%;
   margin: 0 auto;
   background-color: #faf8f8;
-
   max-width: 1250px;
-
   justify-items: center;
 }
 
