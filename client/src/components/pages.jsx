@@ -28,7 +28,7 @@ export function Tops() {
     const fetchProducts = async () => {
       try {
         const res = await fetch(
-          "http://localhost:8000/api/products?category=tops"
+          "https://corazon2-api-production.up.railway.app/api/products?category=tops"
         );
         const data = await res.json();
         setProducts(data);
@@ -68,7 +68,7 @@ export function Pants() {
     const fetchProducts = async () => {
       try {
         const res = await fetch(
-          "http://localhost:8000/api/products?category=bottoms"
+          "https://corazon2-api-production.up.railway.app/api/products?category=bottoms"
         );
         const data = await res.json();
         setProducts(data);
@@ -109,7 +109,7 @@ export function Accessories() {
     const fetchProducts = async () => {
       try {
         const res = await fetch(
-          "http://localhost:8000/api/products?category=accessories"
+          "https://corazon2-api-production.up.railway.app/api/products?category=accessories"
         );
         const data = await res.json();
         setProducts(data);
