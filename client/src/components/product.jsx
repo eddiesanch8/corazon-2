@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/product.css";
 import cart from "../assets/cart-2.svg";
-const cart2 = "../src/assets/cart-2.svg";
 // fetch in other file loop through the objects, assign them a variable...
 // and then import those values in those objects into the productCard
 export default function ProductCard({ products }) {
@@ -28,7 +27,7 @@ export default function ProductCard({ products }) {
         hic exercitationem alias culpa consectetur accusamus.
       </p> */}
           <button className="product__btn">
-            <img className="product__cart" src={cart2} />
+            <img className="product__cart" src={cart} />
             Add to Cart
           </button>
         </section>
