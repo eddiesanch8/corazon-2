@@ -1,8 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "motion/react";
-// replace icons with your own if needed
-import { FiCircle, FiCode, FiLayers, FiLayout } from "react-icons/fi";
-
+import { Link } from "react-router-dom";
 import "../css/Carousel.css";
 
 const DEFAULT_ITEMS = [
@@ -182,7 +180,12 @@ export default function CarouselTops({
               <div className="carousel-item-content">
                 <img className="carousel-product " src={item.img} />{" "}
                 <div className="carousel-item-title">{item.title}</div>
-                <p className="carousel-item-description">{item.description}</p>
+                <Link to="/tops">
+                  {" "}
+                  <p className="carousel-item-description">
+                    {item.description}
+                  </p>
+                </Link>{" "}
               </div>
             </motion.div>
           );

@@ -68,7 +68,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="contact">
+    <section className="contact-us">
       <h2 className="contact__header">Contact Information:</h2>
       <div className="contact-card">
         <form className="contact__form" onSubmit={handleSubmit}>
