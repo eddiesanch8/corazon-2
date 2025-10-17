@@ -1,7 +1,5 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "motion/react";
-// replace icons with your own if needed
-import { FiCircle, FiCode, FiLayers, FiLayout } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 import "../css/Carousel.css";
@@ -10,19 +8,19 @@ const bottoms = [
   {
     title: "Star Jeans",
     img: "/star-jeans.webp",
-    description: "Shoot for the stars!.",
+    description: "Shoot For The Stars!",
     id: 1,
   },
   {
     title: "Acid Jeans",
     img: "/acid-jeans.jpg",
-    description: "Style thats so corrosive",
+    description: "Looking Sweet, Looking Sour",
     id: 2,
   },
   {
     title: "Star Jeans",
     img: "/star-jeans.webp",
-    description: "Shoot for the stars!.",
+    description: "Shoot For The Stars!",
     id: 3,
   },
 ];
@@ -183,7 +181,7 @@ export default function CarouselBottoms({
               <div className="carousel-item-content">
                 <img className="carousel-product " src={item.img} />{" "}
                 <div className="carousel-item-title">{item.title}</div>
-                <Link to="/bottoms">
+                <Link to="/pants">
                   <p className="carousel-item-description">
                     {item.description}
                   </p>

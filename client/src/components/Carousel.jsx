@@ -1,9 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "motion/react";
-// replace icons with your own if needed
-import { FiCircle, FiCode, FiLayers, FiLayout } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import Corazon from "/corazon.svg";
 import "../css/Carousel.css";
 
 const accessories = [
@@ -35,10 +32,10 @@ const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 };
 export default function CarouselAcc({
   items = accessories,
   baseWidth = 300,
-  autoplay = false,
+  autoplay = true,
   autoplayDelay = 3600,
-  pauseOnHover = false,
-  loop = false,
+  pauseOnHover = true,
+  loop = true,
   round = false,
 }) {
   const containerPadding = 16;

@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 24px;
-  padding: 16px;
+  padding-top: 16px;
   --outer-r: 24px;
   --p-distance: 12px;
 }
@@ -29,6 +29,7 @@ a:-webkit-any-link {
 }
 
 .carousel-product {
+  border-radius: 10px;
   width: 90%;
   z-index: -1;
 }
@@ -37,17 +38,18 @@ a:-webkit-any-link {
   cursor: grabbing;
 }
 
-.carousel-container.round {
-  border: 1px solid #555;
+.other {
+  margin-top: 60px;
+  box-shadow: rgba(37, 37, 37, 0.584) -7px 6px 8px 2px;
 }
-
 .accessories {
   height: 400px;
-  background-color: #f3f3f3;
+  background-color: #011126;
+  box-shadow: rgba(37, 37, 37, 0.584) -7px 6px 8px 2px;
 }
 
 .other {
-  background-color: #f0ffff;
+  background-color: #8c4f54;
   height: 350px;
 }
 @media screen and (max-width: 850px) {
@@ -58,29 +60,6 @@ a:-webkit-any-link {
   .other {
     height: 300px;
   }
-}
-
-.carousel-item.round {
-  background-color: #0d0716;
-  position: relative;
-  bottom: 0.1em;
-  border: 1px solid #555;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.carousel-item-header.round {
-  padding: 0;
-  margin: 0;
-}
-
-.carousel-indicators-container.round {
-  position: absolute;
-  z-index: 2;
-  bottom: 3em;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .carousel-indicator.active {
@@ -115,12 +94,12 @@ a:-webkit-any-link {
   margin-bottom: 4px;
   font-weight: 900;
   font-size: 1.2rem;
-  color: #000000;
+  color: #ebe3e3;
 }
 
 .carousel-item-description {
   font-size: 1rem;
-  color: #000000;
+  color: #ece6e6;
 }
 
 .carousel-indicators-container {
@@ -146,9 +125,9 @@ a:-webkit-any-link {
 }
 
 .carousel-indicator.active {
-  background-color: #fff;
+  background-color: #ead5f2;
 }
 
 .carousel-indicator.inactive {
-  background-color: #555;
+  background-color: #011126;
 }

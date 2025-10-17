@@ -22,13 +22,13 @@ export function NavBar() {
         aria-controls="nav-bar"
         onClick={toggleMenu}
       >
-        <img src={hamburger} alt="menu" />
+        <img className="hamburger" src={hamburger} alt="menu" />
       </button>
       <nav className={`nav-bar ${isOpen ? "show" : ""}`}>
         <ul className="nav-bar__ul">
           <li className="nav-bar__item">
             <button onClick={toggleMenu} className={`nav-bar--close`}>
-              <img src={closeBtn} alt="close" />
+              <img className="close-hamburger" src={closeBtn} alt="close" />
             </button>
           </li>
           <li className="nav-bar__item">
