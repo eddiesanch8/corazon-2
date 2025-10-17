@@ -1,10 +1,9 @@
 .home-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 60% 40%;
   width: 100%;
   margin: 0 auto;
-  background-color: #faf8f8;
   max-width: 1250px;
   grid-template-areas:
     "hero hero hero"
@@ -16,14 +15,28 @@
 }
 .heroimg-2 {
   width: 100%;
-  height: auto;
-  z-index: 15;
+  position: relative;
+  z-index: -1;
+}
+.sliders {
+  position: relative;
+  top: -100vh;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.hero-btn {
-  position: relative;
-  display: flex;
-  left: 45%;
-  top: -45%;
-  padding: 10px;
+@media screen and (max-width: 850px) {
+  .sliders {
+    flex-direction: column;
+    align-items: center;
+    top: -75vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sliders {
+    flex-direction: column;
+    align-items: center;
+    top: -30vh;
+  }
 }
