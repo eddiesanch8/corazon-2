@@ -4,11 +4,13 @@
   font-weight: 800;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.8fr 0.5fr 0.5fr;
-  grid-template-areas: "hero" "contact" "web-bottom";
+.contact {
+  display: flex;
+  height: 85vh;
+  width: 100%;
+  background-color: #faf8f8;
+  max-width: 1250px;
+  justify-items: center;
 }
 
 .hero-header {
@@ -28,13 +30,12 @@
 }
 
 .contact {
-  grid-area: contact;
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-items: center;
   border-radius: 20px;
-  margin-top: 1rem;
+  margin: 1rem;
   padding: 2rem;
   background-color: #0f0f23;
   color: #f0f0f0;
@@ -42,7 +43,7 @@
 @media (min-width: 800px) {
   .contact {
     min-width: 50%;
-    max-width: 75%;
+    max-width: 55%;
   }
 }
 
@@ -50,11 +51,11 @@
   width: 200%;
   border-radius: 20px;
 }
-
 .contact__form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-between;
 }
 @media (min-width: 800px) {
   .contact__form {
@@ -66,7 +67,7 @@
   width: 70%;
   height: 2rem;
   border-radius: 0.6rem;
-  color: #00bfff;
+  color: #002c6e;
   margin-bottom: 0.2rem;
   padding: 0.2rem;
 }
@@ -84,16 +85,16 @@
   background-color: #f0f0f0;
   border-radius: 0.8rem;
   cursor: pointer;
-  color: #00bfff;
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  letter-spacing: 2px;
+  width: 35%;
   transition: all 0.3s ease;
-  letter-spacing: 0.5px;
 }
 .submit-btn:hover {
   transform: translateY(-2px) scale(1.01);
-  background-color: #00bfff;
+  background-color: #0780a8;
   color: #f0f0f0;
 }
 .submit-btn:active {
@@ -113,7 +114,6 @@
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
-  grid-area: web-bottom;
   border-radius: 20px;
   padding: 1rem;
   text-align: center;

@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap");
+
 .home-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 60% 40%;
+  grid-template-rows: 80% 0.5fr;
   width: 100%;
   margin: 0 auto;
   max-width: 1250px;
@@ -20,23 +22,59 @@
 }
 .sliders {
   position: relative;
-  top: -100vh;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 10px;
+  top: -120vh;
   display: flex;
   justify-content: space-evenly;
 }
 
+.CTA {
+  color: rgb(0, 0, 0);
+  grid-area: text;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+}
+
+.cta__text {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+.cta__cursive {
+  padding: 10px;
+  font-size: 4.5rem;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cta__text--small {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 @media screen and (max-width: 850px) {
   .sliders {
-    flex-direction: column;
-    align-items: center;
-    top: -75vh;
+    display: none;
   }
 }
 
 @media screen and (max-width: 450px) {
   .sliders {
-    flex-direction: column;
-    align-items: center;
-    top: -30vh;
+    display: none;
   }
+}
+
+button {
+  width: 45%;
+  margin: 10px;
+  background-color: rgb(11, 13, 58);
+  padding: 0.5em;
+  font-size: 1.2rem;
+  border-radius: 20px;
 }

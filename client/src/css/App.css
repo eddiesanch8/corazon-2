@@ -34,7 +34,9 @@
 }
 
 .web-footer {
-  border: 2px solid rgb(57, 213, 43);
+  background-color: #0f0f23;
+  color: #faf8f8;
+  padding-top: 10px;
 }
 
 .web__ul {
